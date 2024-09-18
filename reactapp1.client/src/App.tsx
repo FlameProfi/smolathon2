@@ -1,9 +1,9 @@
 import './App.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home.tsx';
-import Login from './Pages/Login.tsx';
-import Register from './Pages/Register.tsx';
+import Home from './Pages/Home/Home.tsx';
+import Login from './Pages/Login/Login.tsx';
+import Register from './Pages/Register/Register.tsx';
 import styles from './styles/index.scss';
 import Modal from './Components/modalOrder/index.tsx';
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './assets/style.scss'
 
 function Login() {
     // state variables for email and passwords
@@ -70,48 +71,37 @@ function Login() {
     };
 
     return (
-        <div className="containerbox">
-            <h3>Login</h3>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label className="forminput" htmlFor="email">Email:</label>
-                </div>
-                <div>
-                    <input
-                        type="email"
+        <div className="auth_page">
+            <h3>ArtConnect Smolensk</h3>
+            <div className="auth_box"> 
+                <h1>АВТОРИЗАЦИЯ</h1>
+                <form onSubmit={handleSubmit}>
+                <div className="box_input">
+                    <div className="input_item">
+                    <p>E-mail</p>
+                    <input type="email"
                         id="email"
                         name="email"
                         value={email}
-                        onChange={handleChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="password">Password:</label>
-                </div>
-                <div>
-                    <input
-                        type="password"
+                        onChange={handleChange} />
+                    </div>
+                    <div className="input_item">
+                    <p>Пароль</p>
+                    <input type="password"
                         id="password"
                         name="password"
                         value={password}
-                        onChange={handleChange}
-                    />
+                        onChange={handleChange} />
+                    </div>
+
                 </div>
-                <div>
-                    <input
-                        type="checkbox"
-                        id="rememberme"
-                        name="rememberme"
-                        checked={rememberme}
-                        onChange={handleChange} /><span>Remember Me</span>
-                </div>
-                <div>
-                    <button type="submit">Login</button>
-                </div>
-                <div>
-                    <button onClick={handleRegisterClick}>Register</button>
-                </div>
-            </form>
+                    {/* TO DO CAPTHA */}
+                    <div className="box_buttons">
+                        <button className="buttons_login" type="submit">ВОЙТИ</button>
+                        <button className="buttons_reg" onClick={handleRegisterClick}>РЕГИСТРАЦИЯ</button>
+                    </div>
+                    </form>
+            </div>
             {error && <p className="error">{error}</p>}
         </div>
     );
