@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmolAtonBLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d057cf91cbefe9e3411dd0a2554d34ca32a5860")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc36fc01d0709a7fd22fb1197639d827be4d3f2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmolAtonBLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmolAtonBLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

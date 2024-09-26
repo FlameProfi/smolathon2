@@ -3,40 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43C1A3D7-08BA-4B18-AB90-B573D948CE52}|Backend\\SmolAtonBLL\\SmolAtonBLL.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonbll\\managers\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43C1A3D7-08BA-4B18-AB90-B573D948CE52}|Backend\\SmolAtonBLL\\SmolAtonBLL.csproj|solutionrelative:backend\\smolatonbll\\managers\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}|Backend\\SmolAtonDal\\SmolAtonDAL.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatondal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}|Backend\\SmolAtonDal\\SmolAtonDAL.csproj|solutionrelative:backend\\smolatondal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\dto\\request\\getuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\dto\\request\\getuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}|Backend\\SmolAtonDal\\SmolAtonDAL.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatondal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}|Backend\\SmolAtonDal\\SmolAtonDAL.csproj|solutionrelative:backend\\smolatondal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\requests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\requests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\dto\\response\\getuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\dto\\response\\getuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\responses\\createuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\responses\\createuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\dto\\response\\insertuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\dto\\response\\insertuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\requests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\requests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\dto\\request\\insertuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\dto\\request\\insertuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43C1A3D7-08BA-4B18-AB90-B573D948CE52}|Backend\\SmolAtonBLL\\SmolAtonBLL.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonbll\\managers\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C1A3D7-08BA-4B18-AB90-B573D948CE52}|Backend\\SmolAtonBLL\\SmolAtonBLL.csproj|solutionrelative:backend\\smolatonbll\\managers\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43C1A3D7-08BA-4B18-AB90-B573D948CE52}|Backend\\SmolAtonBLL\\SmolAtonBLL.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonbll\\services\\hashpasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C1A3D7-08BA-4B18-AB90-B573D948CE52}|Backend\\SmolAtonBLL\\SmolAtonBLL.csproj|solutionrelative:backend\\smolatonbll\\services\\hashpasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\dto\\response\\insertuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\dto\\response\\insertuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatonshared\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6665871C-2D0E-4892-AB44-D99E66965930}|Backend\\SmolAtonShared\\SmolAtonShared.csproj|solutionrelative:backend\\smolatonshared\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}|Backend\\SmolAtonDal\\SmolAtonDAL.csproj|c:\\users\\home\\desktop\\hakton\\smolathon2\\backend\\smolatondal\\datebasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,11 +94,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\DTO\\Response\\GetUserRequest.cs",
+              "RelativeDocumentMoniker": "Backend\\SmolAtonShared\\DTO\\Response\\GetUserRequest.cs",
+              "ToolTip": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\DTO\\Response\\GetUserRequest.cs",
+              "RelativeToolTip": "Backend\\SmolAtonShared\\DTO\\Response\\GetUserRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T19:48:43.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HashPasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonBLL\\Services\\HashPasswordService.cs",
+              "RelativeDocumentMoniker": "Backend\\SmolAtonBLL\\Services\\HashPasswordService.cs",
+              "ToolTip": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonBLL\\Services\\HashPasswordService.cs",
+              "RelativeToolTip": "Backend\\SmolAtonBLL\\Services\\HashPasswordService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T19:42:09.206Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -100,14 +134,14 @@
               "RelativeDocumentMoniker": "Backend\\SmolAtonShared\\DTO\\Request\\GetUserRequest.cs",
               "ToolTip": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\DTO\\Request\\GetUserRequest.cs",
               "RelativeToolTip": "Backend\\SmolAtonShared\\DTO\\Request\\GetUserRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T19:37:20.468Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CreateUserResponse.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\Responses\\CreateUserResponse.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonShared\\Responses\\CreateUserResponse.cs",
@@ -120,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "CreateUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\Requests\\CreateUserRequest.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonShared\\Requests\\CreateUserRequest.cs",
@@ -133,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\Responses\\LoginResponse.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonShared\\Responses\\LoginResponse.cs",
@@ -146,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\Requests\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonShared\\Requests\\LoginRequest.cs",
@@ -159,20 +193,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "UserManager.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonBLL\\Managers\\UserManager.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonBLL\\Managers\\UserManager.cs",
               "ToolTip": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonBLL\\Managers\\UserManager.cs",
               "RelativeToolTip": "Backend\\SmolAtonBLL\\Managers\\UserManager.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAUwBIAAAAJAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwBkAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T19:25:58.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "InsertUserResponse.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\DTO\\Response\\InsertUserResponse.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonShared\\DTO\\Response\\InsertUserResponse.cs",
@@ -191,27 +225,27 @@
               "RelativeDocumentMoniker": "Backend\\SmolAtonShared\\DTO\\Request\\InsertUserRequest.cs",
               "ToolTip": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonShared\\DTO\\Request\\InsertUserRequest.cs",
               "RelativeToolTip": "Backend\\SmolAtonShared\\DTO\\Request\\InsertUserRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T19:11:13.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonDal\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonDal\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonDal\\Repositories\\UserRepository.cs*",
-              "RelativeToolTip": "Backend\\SmolAtonDal\\Repositories\\UserRepository.cs*",
-              "ViewState": "AQIAABAAAAAAAAAAAAA6wDEAAAAVAAAA",
+              "ToolTip": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonDal\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Backend\\SmolAtonDal\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAArwDEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T19:02:42.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonDal\\Entity\\User.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonDal\\Entity\\User.cs",
@@ -224,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "DateBaseContext.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\Backend\\SmolAtonDal\\DateBaseContext.cs",
               "RelativeDocumentMoniker": "Backend\\SmolAtonDal\\DateBaseContext.cs",
@@ -237,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\SmolAtonShared\\Responses\\LoginResponse.cs",
               "RelativeDocumentMoniker": "SmolAtonShared\\Responses\\LoginResponse.cs",
@@ -249,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\SmolAtonShared\\Requests\\LoginRequest.cs",
               "RelativeDocumentMoniker": "SmolAtonShared\\Requests\\LoginRequest.cs",
@@ -261,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\SmolAtonDal\\Entity\\User.cs",
               "RelativeDocumentMoniker": "SmolAtonDal\\Entity\\User.cs",
@@ -273,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "DateBaseContext.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\SmolAtonDal\\DateBaseContext.cs",
               "RelativeDocumentMoniker": "SmolAtonDal\\DateBaseContext.cs",
@@ -285,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\SmolAtonWebApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "SmolAtonWebApi\\Controllers\\UserController.cs",
@@ -296,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\SmolAtonWebApi\\appsettings.json",
               "RelativeDocumentMoniker": "SmolAtonWebApi\\appsettings.json",
@@ -308,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\SmolAtonWebApi\\Program.cs",
               "RelativeDocumentMoniker": "SmolAtonWebApi\\Program.cs",
@@ -320,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "SmolAtonWebApi.http",
               "DocumentMoniker": "C:\\Users\\home\\Desktop\\hakton\\smolathon2\\SmolAtonWebApi\\SmolAtonWebApi.http",
               "RelativeDocumentMoniker": "SmolAtonWebApi\\SmolAtonWebApi.http",

@@ -8,6 +8,7 @@ namespace SmolAtonShared.DTO.Request
 {
     public record GetUserRequest
     {
-        public 
+        public required string Email { get; init; }
+        public required string Password { get; init; }
     }
 }
