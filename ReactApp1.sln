@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactApp1.Server", "ReactApp1.Server\ReactApp1.Server.csproj", "{2F1B0D40-EAE3-4FA4-B069-D361CA7FDE9C}"
-EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "reactapp1.client", "reactapp1.client\reactapp1.client.esproj", "{E955ED1C-FDD0-42F2-8ACD-A5FA12AF8F4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{CD62EC90-697C-4AB4-A3FB-689D172761F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmolAtonWebApi", "Backend\SmolAtonWebApi\SmolAtonWebApi.csproj", "{5D3D7597-D3ED-402B-9B20-EEE0F802FA05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmolAtonBLL", "Backend\SmolAtonBLL\SmolAtonBLL.csproj", "{43C1A3D7-08BA-4B18-AB90-B573D948CE52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmolAtonDAL", "Backend\SmolAtonDal\SmolAtonDAL.csproj", "{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmolAtonShared", "Backend\SmolAtonShared\SmolAtonShared.csproj", "{6665871C-2D0E-4892-AB44-D99E66965930}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +21,37 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F1B0D40-EAE3-4FA4-B069-D361CA7FDE9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F1B0D40-EAE3-4FA4-B069-D361CA7FDE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F1B0D40-EAE3-4FA4-B069-D361CA7FDE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F1B0D40-EAE3-4FA4-B069-D361CA7FDE9C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E955ED1C-FDD0-42F2-8ACD-A5FA12AF8F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E955ED1C-FDD0-42F2-8ACD-A5FA12AF8F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E955ED1C-FDD0-42F2-8ACD-A5FA12AF8F4F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{E955ED1C-FDD0-42F2-8ACD-A5FA12AF8F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E955ED1C-FDD0-42F2-8ACD-A5FA12AF8F4F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E955ED1C-FDD0-42F2-8ACD-A5FA12AF8F4F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5D3D7597-D3ED-402B-9B20-EEE0F802FA05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3D7597-D3ED-402B-9B20-EEE0F802FA05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3D7597-D3ED-402B-9B20-EEE0F802FA05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3D7597-D3ED-402B-9B20-EEE0F802FA05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C1A3D7-08BA-4B18-AB90-B573D948CE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C1A3D7-08BA-4B18-AB90-B573D948CE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C1A3D7-08BA-4B18-AB90-B573D948CE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C1A3D7-08BA-4B18-AB90-B573D948CE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6665871C-2D0E-4892-AB44-D99E66965930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6665871C-2D0E-4892-AB44-D99E66965930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6665871C-2D0E-4892-AB44-D99E66965930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6665871C-2D0E-4892-AB44-D99E66965930}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D3D7597-D3ED-402B-9B20-EEE0F802FA05} = {CD62EC90-697C-4AB4-A3FB-689D172761F1}
+		{43C1A3D7-08BA-4B18-AB90-B573D948CE52} = {CD62EC90-697C-4AB4-A3FB-689D172761F1}
+		{7A3452F9-9D73-46D2-8EB0-AB2AF0CCEE0C} = {CD62EC90-697C-4AB4-A3FB-689D172761F1}
+		{6665871C-2D0E-4892-AB44-D99E66965930} = {CD62EC90-697C-4AB4-A3FB-689D172761F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A0E6E7D-6100-4384-B00F-9B087B9A9C69}

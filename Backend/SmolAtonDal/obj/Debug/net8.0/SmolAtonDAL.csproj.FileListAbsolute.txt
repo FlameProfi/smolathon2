@@ -1,0 +1,6 @@
+C:\Users\home\Desktop\hakton\smolathon2\Backend\SmolAtonDal\obj\Debug\net8.0\SmolAtonDAL.csproj.AssemblyReference.cache
+C:\Users\home\Desktop\hakton\smolathon2\Backend\SmolAtonDal\obj\Debug\net8.0\SmolAtonDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\home\Desktop\hakton\smolathon2\Backend\SmolAtonDal\obj\Debug\net8.0\SmolAtonDAL.AssemblyInfoInputs.cache
+C:\Users\home\Desktop\hakton\smolathon2\Backend\SmolAtonDal\obj\Debug\net8.0\SmolAtonDAL.AssemblyInfo.cs
+C:\Users\home\Desktop\hakton\smolathon2\Backend\SmolAtonDal\obj\Debug\net8.0\SmolAtonDAL.csproj.CoreCompileInputs.cache
+C:\Users\home\Desktop\hakton\smolathon2\Backend\SmolAtonDal\obj\Debug\net8.0\SmolAtonDAL.sourcelink.json
