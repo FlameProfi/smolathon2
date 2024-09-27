@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home.tsx';
 import Login from './Pages/Login/Login.tsx';
 import Register from './Pages/Register/Register.tsx';
 import styles from './styles/index.scss';
-import Modal from './Components/modalOrder/index.tsx';
+import Card from './Components/Card/index.tsx';
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/card/:productId" element={<Modal active={true} setActive={true}/>} />
+                <Route path="/card/:productId" element={<Card/>} />
                 <Route path="/" element={<Home />} />
             </Routes>
         </BrowserRouter>

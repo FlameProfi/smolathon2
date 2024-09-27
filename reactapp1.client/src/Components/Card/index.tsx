@@ -3,6 +3,7 @@ import './assets/style.scss'
 import { useParams } from "react-router-dom";
 import testImg from "./assets/test_logo.png";
 import star from "./assets/star.svg";
+import { Header } from "../Header";
 interface ICard {
     id: number;
     name: string;
@@ -12,7 +13,7 @@ interface ICard {
     TODO2: string;
 }
 
-const Modal = ({active, setActive} : {active: any, setActive: any}) => {
+const Card= () => {
     const { productId } = useParams();
     const [card, setCard] = useState<ICard>();
     const apiUrl = `http://localhost:7209/cardId=${productId}`;
@@ -25,8 +26,9 @@ const Modal = ({active, setActive} : {active: any, setActive: any}) => {
 
 
     return (
-        <div className={active ? "modal active" : "modal"} onClick={()=> setActive(false)}>
-            <div className="modal__content" onClick={e => e.stopPropagation()}>
+        <div className="modal active">
+            <div className="modal__content">
+            <Header />
                 <div className="top">
                     <div className="left">
                         <h1>{card?.name}</h1>
@@ -95,4 +97,4 @@ const Modal = ({active, setActive} : {active: any, setActive: any}) => {
         });
     }
 };
-export default Modal;
+export default Card;
