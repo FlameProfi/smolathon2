@@ -1,69 +1,75 @@
 .header{
     max-width: 100%;
     max-height: 100px;
+    margin-top: 20px;
     display: flex;
-    padding: 10px;
     align-items: center;
     width: 100%;
-    justify-content: center;
-    .burger{
-        position: absolute;
+    justify-content: left;
+    background-color: #000000;
+  
+    .header__menu{
         display: flex;
-        flex-direction: column;
-        gap: 2px;
-        left: 15px;
-        .item{
-            box-sizing: border-box;
-            width: 46px;
-            height: 6px;
-            border: 1px solid #000000;
-
-        }
-    }
-    .center{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .logo{  
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        img{
-            max-width: 219px;
-            max-height: 55.91px;
-        }
-        h1{
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 20px;
-            line-height: 24px;
-            margin-block-start: 0px;
-            margin-block-end: 0px;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            color: #000000;
-
-        }
-    }
-    .new__items{
-        margin-top: 15px;
-        display: flex;
-        gap: 40px;
+        gap: 52px;
+        margin-right: 30px;
         p{
             font-family: 'Inter';
             font-style: normal;
-            font-weight: 800;
-            font-size: 14px;
-            line-height: 17px;
-            /* identical to box height */
-            display: flex;
-            align-items: center;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: #F2D893;
+        }
 
-            color: #9A9A9A;
+    }
+    .search__login{
+        display: flex;
+        gap: 30px;
+    }
+    .header__search{
+        width: 254px;
+        height: 74px;
+
+        background: #0E0E0E;
+        border: 2px solid #FFFFFF;
+        border-radius: 27px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-left: 5px;
+        }
+        input{
+            background: none;
+            border: none;
+            outline: none;
+            margin-left: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+            text-transform: capitalize;
+            max-width: 180px;
+            color: #F2D893;
+        }
+        input:focus{
+
         }
     }
+    .header__login{
+        width: 258px;
+        height: 78px;
+        background: linear-gradient(94.99deg, #CC0029 5.45%, #97001E 91.67%);
+        border: 2px solid #FFFFFF;
+        box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.25);
+        border-radius: 27px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+
+        color: #F2D893;
     }
 }
