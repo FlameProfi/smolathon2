@@ -1,0 +1,129 @@
+.event{
+    width: 100vw;
+    height: 100vh;
+    .event__content{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 100px;
+        .event__content__left{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            img{
+                width: 807px;
+                height: 446px;
+            }
+            .slider{
+                display: flex;
+                gap: 27px;
+                img{
+                    width: 110px;
+                    height: 60px;
+
+                    background: rgba(0, 0, 0, 0.4);
+
+                }
+            }
+        }
+        .event__content__right{
+            p{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: left;
+                color: #000000;
+            }
+            .event__content__right__info{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                p{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: left;
+                    color: #000000;
+                }
+                h1{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 32px;
+                    line-height: 39px;
+                    /* identical to box height */
+                    text-align: left;
+                    color: #000000;
+                }
+                .buy_ticket{
+                    width: 464px;
+                    height: 40px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    background: #000000;
+
+                }
+            }
+            .event__content__right__about__company{
+                width: 473px;
+                height: 259px;
+                p{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 24px;
+                    width: 150px;
+                    color: #000000;
+                }
+
+                .fake__table{
+                    display: flex;
+                    flex-direction: column;
+                    .dark__item{
+                        width: 473px;
+                        height: 36px;
+                        display: flex;
+                        background: #D9D9D9;
+                        padding: 5px;
+                        align-items: center;
+                        span{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 24px;
+                            margin-left: 10px;
+                            color: #000000;
+                        }
+                    }
+                    .light__item{
+                        width: 473px;
+                        height: 36px;
+                        display: flex;
+                        padding: 5px;
+                        align-items: center;
+                        span{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 24px;
+                            margin-left: 10px;
+                            color: #000000;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ import search_logo from "./assets/search_logo.png";
 import './assets/style.scss'
 import { useNavigate } from "react-router-dom";
 
-export const Header = () => {
+export const Header = (props: { authorized: boolean }) => {
     const navigate = useNavigate();
 
     const handleSearch = () => {
