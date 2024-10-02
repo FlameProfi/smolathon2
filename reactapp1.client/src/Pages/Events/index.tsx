@@ -4,6 +4,7 @@ import down from "./assets/downgrade.svg";
 import mesto from "./assets/mesto.png";
 import { Header } from "../../Components/Header";
 import { useNavigate } from "react-router-dom";
+import WebFont from 'webfontloader';
 
 interface IEvent {
     id: number;
@@ -22,6 +23,11 @@ const Card= () => {
     }
      
     useEffect(() => {
+        WebFont.load({
+            google: {
+              families: ['Exo 2', 'Inter']
+            }
+          });
         getEvents();
     }, []);
 
@@ -55,7 +61,7 @@ const Card= () => {
                         <div className="right__items__item" key={index} onClick={() => navigateToEvent(item.id)}>
                             <img src={mesto} alt="" />
                             <div className="top"> 
-                                <p>{item.name}</p>
+                                <p style={{fontFamily: "Exo 2"}}>{item.name}</p>
                                 <p>от {item.price} р</p>
                             </div>
                             <p>{item.pos}</p>
