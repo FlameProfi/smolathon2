@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import './assets/style.scss'
 import down from "./assets/downgrade.svg";
 import mesto from "./assets/mesto.png";
-import { Header } from "../../Components/Header";
+import { Header } from "../../components/Header/Header";
 import { useNavigate } from "react-router-dom";
 import WebFont from 'webfontloader';
+import {Context} from "../../index";
 
 interface IEvent {
     id: number;
@@ -17,19 +18,20 @@ const Card= () => {
     const [events, setEvents] = useState<IEvent[]>();
     const apiUrl = `http://localhost:7209/events`;
     const navigate = useNavigate();
+    const {store} = useContext(Context);
 
     const navigateToEvent = (eventID: number) => {
         navigate(`/event/${eventID}`);
     }
      
-    useEffect(() => {
-        WebFont.load({
-            google: {
-              families: ['Exo 2', 'Inter']
-            }
-          });
-        getEvents();
-    }, []);
+    // useEffect(() => {
+    //     WebFont.load({
+    //         google: {
+    //           families: ['Exo 2', 'Inter']
+    //         }
+    //       });
+    //     getEvents();
+    // }, []);
 
 
 

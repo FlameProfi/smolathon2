@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import './assets/style.scss'
 import { useParams } from "react-router-dom";
-import { Header } from "../../Components/Header";
+import { Header } from "../../components/Header/Header";
 import picture from "./assets/picture.png"
-import QrModal from "../../Components/QrModal";
+import QrModal from "../../components/QrModal/QrModal";
 interface IEvent {
     id: number;
     name: string;
