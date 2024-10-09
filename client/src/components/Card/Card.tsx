@@ -3,7 +3,6 @@ import './assets/style.scss'
 import { useParams } from "react-router-dom";
 import testImg from "./assets/test_logo.png";
 import star from "./assets/star.svg";
-import { Header } from "../Header/Header";
 interface ICard {
     id: number;
     name: string;
@@ -28,7 +27,6 @@ const Card= () => {
     return (
         <div className="modal active">
             <div className="modal__content">
-            <Header authorized={false}/>
                 <div className="top">
                     <div className="left">
                         <h1>{card?.name}</h1>

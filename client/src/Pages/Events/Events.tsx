@@ -2,7 +2,6 @@ import React, { useEffect, useState, useContext } from "react";
 import './assets/style.scss'
 import down from "./assets/downgrade.svg";
 import mesto from "./assets/mesto.png";
-import { Header } from "../../components/Header/Header";
 import { useNavigate } from "react-router-dom";
 import WebFont from 'webfontloader';
 import {Context} from "../../index";
@@ -38,7 +37,6 @@ const Card= () => {
 
     return (
         <div className="event__list">
-            <Header authorized={false} />
             <div className="event__main"> 
             <div className="left">
                 <div className="left__item"><p>Художник</p>

@@ -5,7 +5,6 @@ import './assets/style.scss'
 import ava from "./assets/ava.png";
 import message_icon from "./assets/message_ico.svg";
 import share_icon from "./assets/share_ico.svg";
-import { Header } from "../../components/Header/Header";
 import WebFont from 'webfontloader';
 
 interface IUser {
@@ -42,7 +41,6 @@ const Profile= () => {
 
     return (
         <div className="profile">
-            <Header authorized={false} />
             <div className="profile__content"> 
               <div className="profile__info__block">
                 <img src={ava} alt="" />

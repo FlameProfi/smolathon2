@@ -1,0 +1,226 @@
+.active {
+    color: rgb(0, 0, 0);
+    fill: rgb(0, 0, 0);
+    font-weight: bold;
+    transform: scale(1.1);
+    /* Увеличиваем размер карточки в 1.1 раза при наведении */
+    cursor: default;
+}
+
+
+
+.header {
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    background-color: rgb(211, 211, 211);
+
+    min-height: 150px;
+
+    a {
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    .logo__ {
+        display: flex;
+
+        .logo__name {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-family: 'Exo 2';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 40px;
+                line-height: 48px;
+                /* identical to box height */
+                margin: 0;
+
+                color: #000000;
+            }
+
+
+
+            .logo__name__block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                .block {
+                    width: 67px;
+                    height: 3px;
+
+                    background: #000000;
+
+                }
+
+                p {
+                    font-family: 'Exo 2';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 24px;
+                    /* identical to box height */
+                    margin: 0;
+                    color: #000000;
+                }
+
+
+            }
+        }
+    }
+
+    .header__menu {
+        display: flex;
+        gap: 70px;
+        opacity: 1;
+        transform: scale(1);
+        display: flex;
+        margin-left: 70px;
+
+        transition: 0.5s;
+
+        a {
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #2b2b2b;
+
+
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(0, 0, 0);
+            fill: rgb(0, 0, 0);
+        }
+    }
+
+    display: flex;
+
+
+    .icons {
+        margin-left: 70px;
+        display: flex;
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 43px;
+            max-height: 43px;
+        }
+    }
+
+    .search__login {
+        display: flex;
+        gap: 30px;
+    }
+
+    .header__search {
+        width: 254px;
+        height: 74px;
+
+        background: #0E0E0E;
+        border: 2px solid #FFFFFF;
+        border-radius: 27px;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 5px;
+        }
+
+        input {
+            background: none;
+            border: none;
+            outline: none;
+            margin-left: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+            text-transform: capitalize;
+            max-width: 180px;
+            color: #F2D893;
+        }
+
+        input:focus {}
+    }
+
+    .header__login {
+        width: 258px;
+        height: 78px;
+        background: linear-gradient(94.99deg, #CC0029 5.45%, #97001E 91.67%);
+        border: 2px solid #FFFFFF;
+        box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.25);
+        border-radius: 27px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+
+        color: #F2D893;
+    }
+}
+
+.input_test {
+    box-sizing: border-box;
+    width: 1001px;
+    height: 49px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 17px;
+    opacity: 0;
+    display: none;
+    padding: 5px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    color: #000000;
+    transform: scale(0.5);
+    transition: 0.4s;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.input_test.active {
+    opacity: 1;
+    transform: scale(1);
+    display: unset;
+}
+
+.input_test:focus {
+    outline: none;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    background-color: rgb(211, 211, 211);
+    min-height: 150px;
+
+}

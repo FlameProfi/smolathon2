@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './assets/style.scss'
 import { useParams } from "react-router-dom";
-import { Header } from "../../components/Header/Header";
 import picture from "./assets/picture.png"
 import QrModal from "../../components/QrModal/QrModal";
 interface IEvent {
@@ -28,7 +27,6 @@ const Card= () => {
 
     return (
         <div className="event">
-            <Header authorized={false}/>
             <div className="event__content">
                 <div className="event__content__left"> 
                     <img src={picture} alt="" />
