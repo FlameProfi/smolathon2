@@ -18,9 +18,9 @@ const AuthorizedLayout = () => {
     const [inputSearch, setInputSearch] = useState<string>("");
 
     useEffect(() => {
-        if (localStorage.getItem('token')) {
-            store.checkAuth()
-        }
+        // if (localStorage.getItem('accessToken')) {
+        //     store.checkAuth()
+        // }
         if(!store.isAuth){
             navigate("/")
         }
@@ -37,7 +37,7 @@ const AuthorizedLayout = () => {
     return (
         <>
 
-            <header className="header">
+            <header className="header__custom">
                 <NavLink to="/">
                     <div className="logo__">
                         <img src={logo} alt="" style={{ marginRight: "20px" }} />

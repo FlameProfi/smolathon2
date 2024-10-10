@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import './assets/style.scss'
+import {Context} from "../../index";
 
 
 function Register() {
@@ -13,7 +14,7 @@ function Register() {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const navigate = useNavigate();
-
+    const {store} = useContext(Context);
     // state variable for error messages
     const [error, setError] = useState("");
 
@@ -21,7 +22,17 @@ function Register() {
         navigate("/login");
     }
 
+    const validateRussianNumber = (number: string): boolean => {
+        const regex = /^(\+7|8)\d{10}$/; // Пример формата: +7XXXXXXXXXX или 8XXXXXXXXXX
+        return regex.test(number);
+    };
 
+    const validateBelarusianNumber = (number: string): boolean => {
+        const regex = /^\+375(29|33|44|25|17)\d{7}$/; // Пример формата: +37529XXXXXXXX
+        return regex.test(number);
+    };
+
+    
     // handle change events for input fields
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
@@ -36,50 +47,35 @@ function Register() {
     };
 
     // handle submit event for the form
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // validate email and passwords
         if (!email || !password || !confirmPassword || !name || !surName || !nick || !phone) {
-            setError("Please fill in all fields.");
+            setError("Заполните все поля");
         } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            setError("Please enter a valid email address.");
+            setError("Проверьте правильность введеного адреса.");
         } else if (password !== confirmPassword) {
-            setError("Passwords do not match.");
-        } else {
-            // clear error message
+            setError("Пароли не совпадают");
+        } else if (!(validateRussianNumber(phone) || validateBelarusianNumber(phone))) {
+            setError("Проверьте правильность номера");
+        }  else {
             setError("");
-            // post data to the /register api
-            fetch("/register", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    email: email,
-                    password: password,
-                }),
-            })
-                //.then((response) => response.json())
-                .then((data) => {
-                    // handle success or error from the server
+            var status = store.registration(email, password, confirmPassword, name, surName, nick, phone);
+            await status.then((data) => {
+                if(data === 200){
+                    console.log("ВОШЛО УСПЕШНО");
+                    navigate(`/profile/${store.user.nickname}`);
+                }
+                else {
                     console.log(data);
-                    if (data.ok)
-                        setError("Successful register.");
-                    else
-                        setError("Error registering.");
-
-                })
-                .catch((error) => {
-                    // handle network error
-                    console.error(error);
-                    setError("Error registering.");
-                });
+                    setError("Ошибка при входе. Код: " + data);
+                }
+            })
         }
     };
 
     return (
         <div className="reg_page">
-            <h3>ArtConnect Smolensk</h3>
+            <h3 >ArtConnect Smolensk</h3>
             <div className="auth_box"> 
                 <h1>РЕГИСТРАЦИЯ</h1>
                 <form onSubmit={handleSubmit}>
@@ -151,52 +147,6 @@ function Register() {
             </div>
             {error && <p className="error">{error}</p>}
         </div>
-        // <div className="containerbox">
-        //     <h3>Register</h3>
-
-        //     <form onSubmit={handleSubmit}>
-        //         <div>
-        //             <label htmlFor="email">Email:</label>
-        //         </div><div>
-        //             <input
-        //                 type="email"
-        //                 id="email"
-        //                 name="email"
-        //                 value={email}
-        //                 onChange={handleChange}
-        //             />
-        //         </div>
-        //         <div>
-        //             <label htmlFor="password">Password:</label></div><div>
-        //             <input
-        //                 type="password"
-        //                 id="password"
-        //                 name="password"
-        //                 value={password}
-        //                 onChange={handleChange}
-        //             />
-        //         </div>
-        //         <div>
-        //             <label htmlFor="confirmPassword">Confirm Password:</label></div><div>
-        //             <input
-        //                 type="password"
-        //                 id="confirmPassword"
-        //                 name="confirmPassword"
-        //                 value={confirmPassword}
-        //                 onChange={handleChange}
-        //             />
-        //         </div>
-        //         <div>
-        //             <button type="submit">Register</button>
-
-        //         </div>
-        //         <div>
-        //             <button onClick={handleLoginClick}>Go to Login</button>
-        //         </div>
-        //     </form>
-
-        //     {error && <p className="error">{error}</p>}
-        // </div>
     );
 }
 

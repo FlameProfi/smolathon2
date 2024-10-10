@@ -1,8 +1,7 @@
 import {IUser} from "../IUser";
+import {IToken} from "../IToken"
 
 export interface AuthResponse {
-    username: string;
-    email: string;
-    token: string;
-    refreshToken: string;
+    user: IUser;
+    token: IToken;
 }

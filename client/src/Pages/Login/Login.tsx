@@ -21,7 +21,7 @@ function Login() {
     };
 
     const handleRegisterClick = () => {
-        navigate("/register");
+        navigate("/auth/register");
     }
 
     // handle submit event for the form
@@ -34,19 +34,16 @@ function Login() {
             setError("");
 
             var status = store.login(email, password);
-            status.then((data) => {
-                if (data?.status == 200){ 
-                    console.log("ВОШЛО УСПЕШНО")
-                    navigate("/events")
+            await status.then((data) => {
+                if(data === 200){
+                    console.log("ВОШЛО УСПЕШНО");
+                    navigate(`/profile/${store.user.nickname}`);
                 }
-                else
-                    setError("Error registering.");
-
+                else {
+                    console.log(data);
+                    setError("Ошибка при входе. Код: " + data);
+                }
             })
-            .catch((error) => {
-                console.error(error);
-                setError("Error registering.");
-            });
             
         }
     };

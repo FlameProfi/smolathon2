@@ -26,7 +26,7 @@ const Card= () => {
     // useEffect(() => {
     //     WebFont.load({
     //         google: {
-    //           families: ['Exo 2', 'Inter']
+    //           families: ['Exo 2', 'Exo 2']
     //         }
     //       });
     //     getEvents();

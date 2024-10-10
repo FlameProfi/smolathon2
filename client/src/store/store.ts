@@ -4,9 +4,11 @@ import AuthService from "../services/AuthService";
 import axios from 'axios';
 import {AuthResponse} from "../models/response/AuthResponse";
 import {API_URL} from "../http";
+import { IToken } from "../models/IToken";
 
 export default class Store {
     user = {} as IUser;
+    tokens = {} as IToken;
     isAuth = false;
     isLoading = false;
 
@@ -18,9 +20,13 @@ export default class Store {
         this.isAuth = bool;
     }
 
-    setUser(email: string, userName: string) {
-        this.user.userName = userName;
-        this.user.email = email;
+    setUser(user: IUser) {
+        this.user = user;
+    }
+    setToken(tokens: IToken) {
+        this.tokens = tokens;
+        localStorage.setItem('accessToken', tokens.accessToken);
+        localStorage.setItem('refreshToken', tokens.refreshToken);
     }
 
     setLoading(bool: boolean) {
@@ -30,25 +36,38 @@ export default class Store {
     async login(email: string, password: string) {
         try {
             const response = await AuthService.login(email, password);
-            console.log(response.data)
-            localStorage.setItem('token', response.data.token);
-            localStorage.setItem('refreshToken', response.data.refreshToken);
+            console.log(response)
+            console.log(response.status)
+            this.setToken(response.data.token);
             this.setAuth(true);
-            this.setUser(response.data.email, response.data.username);
-            return response;
+            this.setUser(response.data.user);
+            return(response.status)
         } catch (e) {
             console.log(e.response?.data?.message);
         }
     }
 
-    async registration(email: string, password: string) {
+    async registration(email: string, password: string, passwordConfirm: string, name: string, surname: string, nickname: string, phoneNumber: string) {
         try {
-            const response = await AuthService.registration(email, password);
+            const response = await AuthService.registration(email, password, passwordConfirm, name, surname, nickname, phoneNumber);
             console.log(response)
-            localStorage.setItem('token', response.data.token);
-            localStorage.setItem('refreshToken', response.data.refreshToken);
+            console.log(response.status)
+            this.setToken(response.data.token);
             this.setAuth(true);
-            this.setUser(response.data.email, response.data.username);
+            this.setUser(response.data.user);
+            return(response.status)
+        } catch (e) {
+            console.log(e.response?.data?.message);
+        }
+    }
+
+    async testBearer() {
+        try {
+            const response = await AuthService.bearer();
+            console.log(response);
+            this.setAuth(false);
+            this.setUser({} as IUser);
+            localStorage.clear();
         } catch (e) {
             console.log(e.response?.data?.message);
         }
@@ -59,7 +78,8 @@ export default class Store {
             const response = await AuthService.logout();
             localStorage.removeItem('token');
             this.setAuth(false);
-            // this.setUser({} as IUser);
+            this.setUser({} as IUser);
+            localStorage.clear();
         } catch (e) {
             console.log(e.response?.data?.message);
         }
@@ -69,14 +89,14 @@ export default class Store {
         this.setLoading(true);
         try {
             // const response = await axios.post<AuthResponse>(`${API_URL}accounts/refresh-token`, {withCredentials: true})
-            var credentialsToken = localStorage.getItem('token');
+            var credentialsToken = localStorage.getItem('accessToken');
             var credentialsRefreshToken = localStorage.getItem('refreshToken');
             if(!credentialsToken || !credentialsRefreshToken) return;
             const response = await AuthService.refresh(credentialsToken, credentialsRefreshToken);
             console.log(response);
-            localStorage.setItem('token', response.data.token);
+            this.setToken(response.data.token);
             this.setAuth(true);
-            this.setUser(response.data.email, response.data.username);
+            this.setUser(response.data.user);
         } catch (e) {
             console.log(e.response?.data?.message);
         } finally {

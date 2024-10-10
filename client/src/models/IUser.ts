@@ -1,4 +1,12 @@
 export interface IUser {
-    userName: string;
-    email: string;
+    name: string
+    surnameName: string
+    nickname: string
+    phone: string
+    subscriberCount: number
+    likeCount: number
+    workCount: number
+    discription: any
+    avatarPic: any
+    backgroundPic: any
 }
