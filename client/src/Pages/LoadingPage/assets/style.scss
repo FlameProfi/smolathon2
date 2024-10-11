@@ -1,0 +1,245 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+.landing-header{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding-left: 200px;
+    padding-top: 150px;
+    min-width: 100%;
+    height: 100vh;
+    background: url(../img/header_background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.landing-header-text{
+    font-family: Exo 2;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 43.2px;
+    text-align: left;
+    max-width: 750px;
+}
+.landing-header-buttonBlock{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding-left: 20ox;
+}
+.landing-header-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 50px;    
+    background-color: #000;
+    color: #fff;
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 16px;
+    line-height: 24px;
+}
+.landing-header-about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-left: 150px;
+    padding-top: 150px;
+    min-width: 100%;
+    height: 748px;
+}
+.landing-header-authors, .landing-header-events{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-left: 150px;
+    padding-top: 150px;
+    min-width: 100%;
+}
+.landing-header-about-us-label, .landing-header-authors-label, .landing-header-event-label{
+    font-family: Exo 2;
+    font-size: 36px;
+    font-weight: 800;
+}
+.landing-header-about-us-list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.landing-header-about-us-block{
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 28px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #F5F5F5;
+    width: 299px;
+    height: 200px;
+    border-radius: 18px;
+    padding-bottom: 15px;
+}
+.landing-header-about-us-block-fotter{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 40px;
+}
+.landing-header-about-us-block-text{
+    font-family: "Exo 2";
+    font-size: 20px;
+    font-weight: 600;
+}
+.landing-header-authors-categories-list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 67%;
+    height: 49px;
+    border-radius: 10px;
+    background: #F5F5F5;
+}
+.landing-header-authors-category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F5F5;
+    width: 200px;
+    height: 41px;
+    border-radius: 10px;    
+    font-family: "Exo 2";
+    font-size: 24px;
+    font-weight: 800;
+
+}
+.landing-header-authors-category.active{
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 41px;
+    border-radius: 10px;    
+    font-family: Exo 2;
+    font-size: 24px;
+    font-weight: 800;
+}
+.landing-author-card{
+    width: 1463px;
+    height: 351px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    padding-top: 20px;
+    background: url(../img/authorBack.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.landong-author-info{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.landing-author-base-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.landing-author-FIO{
+    font-family: Exo 2;
+    font-size: 36px;
+    font-weight: 600;
+}
+.landing-author-nickname{
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 600;
+}
+.landing-author-description{
+    width: 404px;
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 600;
+}
+.landing-author-works{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    
+    gap: 30px;
+    width: 1329px;
+    height: 499px;
+    border-radius: 10px;
+}
+.landing-author-work{
+    padding-left: 33px;
+    padding-top: 29px;
+    padding-right: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+.landing-author-work-name{
+    font-family: Exo 2;
+    font-size: 24px;
+    font-weight: 600;
+}
+.landing-header-event-list{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.landing-header-event{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+    height: 580px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.landing-header-event-name{
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+}
+.landing-header-event-name-text{
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 600;
+}
+.landing-header-event-info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.landing-header-event-description{
+    font-family: Exo 2;
+font-size: 20px;
+font-weight: 600;
+}
+.landing-header-event-btn{
+    width: 360px;
+height: 35px;
+border-radius: 10px;
+background-color: #000;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Exo 2;
+font-size: 20px;
+}

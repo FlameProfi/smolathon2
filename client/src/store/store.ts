@@ -5,6 +5,7 @@ import axios from 'axios';
 import {AuthResponse} from "../models/response/AuthResponse";
 import {API_URL} from "../http";
 import { IToken } from "../models/IToken";
+import UserService from "../services/UserService";
 
 export default class Store {
     user = {} as IUser;
@@ -101,6 +102,37 @@ export default class Store {
             console.log(e.response?.data?.message);
         } finally {
             this.setLoading(false);
+        }
+    }
+
+    async getProfile(userName: string) {
+        try {
+            const response = await UserService.fetchProfile(userName);
+            console.log(response)
+            console.log(response.status)
+            return(response.data)
+        } catch (e) {
+            console.log(e.response?.data?.message);
+        }
+    }
+    async getAllWorks() {
+        try {
+            const response = await UserService.fetchAllWorks();
+            console.log(response)
+            console.log(response.status)
+            return(response.data)
+        } catch (e) {
+            console.log(e.response?.data?.message);
+        }
+    }
+    async getWorkProfile(id: string) {
+        try {
+            const response = await UserService.fetchWorkProfile(id);
+            console.log(response)
+            console.log(response.status)
+            return(response.data)
+        } catch (e) {
+            console.log(e.response?.data?.message);
         }
     }
 }

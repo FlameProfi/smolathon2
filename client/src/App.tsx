@@ -7,10 +7,11 @@ import UnAuthorizedLayout from './layouts/UnAuthorizedLayout.tsx';
 import AuthLayout from "./layouts/AuthLayout.tsx"
 import Login from './Pages/Login/Login.tsx';
 import Register from './Pages/Register/Register.tsx';
-import Events from './Pages/Events/Events.tsx';
+import Goods from './Pages/Goods/Goods';
 import NotFound from './Pages/404/404.tsx';
 import "./styles/fonts.css"
 import Profile from './Pages/Profile/Profile.tsx';
+import { LoadingPage } from './Pages/LoadingPage/LoadingPage';
 
 const App: FC = () => {
     const {store} = useContext(Context);
@@ -53,8 +54,8 @@ const App: FC = () => {
             
             {store.isAuth ? 
             <Route path="/" element={<AuthorizedLayout />} >
-                <Route index element={<p>12dfsgsdfgsdgf3</p>} />
-                <Route path="events" element={<Events />} />
+                <Route index element={<LoadingPage />} />
+                <Route path="goods" element={<Goods />} />
                 <Route path="authors" element={<p>12dfsgsdfgsdgf3</p>} />
                 <Route path="profile/:username" element={<Profile />}/>
 
@@ -66,7 +67,7 @@ const App: FC = () => {
                 :
             // {/* Неавторизованный роутинг */}
             <Route path="/" element={<UnAuthorizedLayout />} >
-            <Route index element={<p>dhgfdfgdfgh</p>} />
+            <Route index element={<LoadingPage/ > } />
             <Route path="events" element={<p >ggg</p>} />
 
                 </Route>
@@ -82,7 +83,7 @@ const App: FC = () => {
 
             </Route>
 
-            <Route path="*" element={<Profile />} />
+            <Route path="*" element={<NotFound />} />
 
         </Routes>
     </BrowserRouter>

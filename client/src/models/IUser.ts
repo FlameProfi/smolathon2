@@ -1,4 +1,5 @@
 export interface IUser {
+    id: number
     name: string
     surnameName: string
     nickname: string
@@ -9,4 +10,8 @@ export interface IUser {
     discription: any
     avatarPic: any
     backgroundPic: any
+    donateCount: number
+    benefits: number
+    preferredCategory: number
+    isVerificate: boolean
 }

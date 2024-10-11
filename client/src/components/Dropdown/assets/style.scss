@@ -1,0 +1,45 @@
+.dropdown {
+    margin: 10px;
+    width: 200px;
+  }
+  
+  .dropdown-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .price-inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .price-inputs input {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover, .dropdown-item.selected {
+    background-color: #ddd;
+  }
