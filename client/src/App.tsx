@@ -12,7 +12,7 @@ import NotFound from './Pages/404/404.tsx';
 import "./styles/fonts.css"
 import Profile from './Pages/Profile/Profile.tsx';
 import { LoadingPage } from './Pages/LoadingPage/LoadingPage';
-
+import { CreateObject } from './Pages/CreateObject/CreateObject';
 const App: FC = () => {
     const {store} = useContext(Context);
 
@@ -56,6 +56,7 @@ const App: FC = () => {
             <Route path="/" element={<AuthorizedLayout />} >
                 <Route index element={<LoadingPage />} />
                 <Route path="goods" element={<Goods />} />
+                <Route path="addGoods" element={<CreateObject />}/>
                 <Route path="authors" element={<p>12dfsgsdfgsdgf3</p>} />
                 <Route path="profile/:username" element={<Profile />}/>
 

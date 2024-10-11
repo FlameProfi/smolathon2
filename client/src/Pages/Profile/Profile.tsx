@@ -155,11 +155,8 @@ const Profile= () => {
         console.log(username);
         var getProfile = store.getProfile(username);
         setUser(await getProfile);
-        setTimeout(async () => {
-          if(user.id == undefined) return;
-          var getWorkInProfile = store.getWorkProfile(user?.id);
-          setWorkInProfile(await getWorkInProfile);
-        }, 5000);
+        var getWorkInProfile = store.getWorkProfile(username);
+        setWorkInProfile(await getWorkInProfile);
         
         // setUser()
     }

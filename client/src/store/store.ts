@@ -125,9 +125,19 @@ export default class Store {
             console.log(e.response?.data?.message);
         }
     }
-    async getWorkProfile(id: string) {
+    async getWorkProfile(userName: string) {
         try {
-            const response = await UserService.fetchWorkProfile(id);
+            const response = await UserService.fetchWorkProfile(userName);
+            console.log(response)
+            console.log(response.status)
+            return(response.data)
+        } catch (e) {
+            console.log(e.response?.data?.message);
+        }
+    }
+    async putGoods(name: string, description: string, count: number, price: number, userId: number) {
+        try {
+            const response = await UserService.putGood(name, description, count, price, userId);
             console.log(response)
             console.log(response.status)
             return(response.data)

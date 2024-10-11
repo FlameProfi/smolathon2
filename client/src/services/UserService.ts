@@ -11,11 +11,14 @@ export default class UserService {
     static async fetchProfile(userName: string): Promise<AxiosResponse<IProfile>> {
         return $api.post<IProfile>('/accounts/get-user', {userName})
     }
-    static fetchWorkProfile(id: string): Promise<AxiosResponse<WorkInProfile[]>> {
-        return $api.get<WorkInProfile[]>(`api/Product/user-id:${id}`)
+    static fetchWorkProfile(userName: string): Promise<AxiosResponse<WorkInProfile[]>> {
+        return $api.get<WorkInProfile[]>(`api/Product/userName?UserName=${userName}`)
     }
     static fetchAllWorks(): Promise<AxiosResponse<AllWorks[]>> {
         return $api.get<AllWorks[]>("api/PictureProduct/all")
+    }
+    static async putGood(name: string, description: string, count: number, price: number, userId: number): Promise<AxiosResponse<IProfile>> {
+        return $api.post<IProfile>('/api/PictureProduct', {name, description, count, price, userId})
     }
 }
 
