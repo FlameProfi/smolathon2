@@ -5,8 +5,9 @@
 .profile__content{
     display: flex;
     justify-content: center;
-
-
+    align-items: center;
+    flex-direction: column;
+    gap: 77px;
     .profile__info__block{
         width: 1308px;
         height: 236px;
@@ -21,7 +22,7 @@
         .block__info{
             display: flex;
             flex-direction: column;
-
+            gap: 15px;
             h1{
                 font-family: 'Exo 2';
                 font-style: normal;
@@ -53,7 +54,7 @@
                 display: flex;
                 gap: 10px;
                 button{
-                    width: 181px;
+                    width: 215px;
                     height: 37px;
                     border: 1px solid #000000;
                     border-radius: 17px;
@@ -72,7 +73,114 @@
             }
         }
     }
+    .profile__desc__block{
+        width: 1308px;
+        min-height: 100px;
+        height: calc(auto + 20px);
+        background: rgba(245, 245, 245, 0.43);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 25px;
+        h1{
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+            
+            color: #000000;
+        }
+        p{
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+
+            color: #9A9A9A;
+        }
+        .profile__desc__block__tags{
+            display: flex;
+            gap: 15px;
+            .tags__item{
+                width: 102px;
+                height: 26px;
+
+                background: #F5F5F5;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Exo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                /* identical to box height */
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+            }
+            }
+    }
+    .profile__desc__block__selector{
+        display: flex;
+        justify-content: space-around;
+        width: 1308px;
+        .selector__text{
+            cursor: pointer;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+
+            color: #9A9A9A;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+        .selector__text.active{
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+
+            color: #000;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+    }
     
 }
 
 
+.stars{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

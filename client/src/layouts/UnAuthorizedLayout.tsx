@@ -28,7 +28,7 @@ const UnAuthorizedLayout = () => {
     return (
         <>
 
-            <header className="header">
+            <header className="header__custom">
                 <NavLink to="/">
                     <div className="logo__">
                         <img src={logo} alt="" style={{ marginRight: "20px" }} />
@@ -45,11 +45,11 @@ const UnAuthorizedLayout = () => {
 
                 <div className="header__menu" >
 
-                    <NavLink to="/events">
-                        СОБЫТИЯ
+                    <NavLink to="/auth/login">
+                        АВТОРИЗАЦИЯ
                     </NavLink>
-                    <NavLink to="/authors">
-                        АВТОРЫ
+                    <NavLink to="/auth/register">
+                        РЕГИСТРАЦИЯ
                     </NavLink>
                     {/* <NavLink to="/">
                         ПРОЕКТЫ
@@ -63,7 +63,7 @@ const UnAuthorizedLayout = () => {
 
 
                 </div>
-                <input type="text"
+                {/* <input type="text"
                     className={search ? "input_test" : "input_test"}
                     style={{ marginLeft: "90px" }}
                     name="inputSearch"
@@ -75,15 +75,12 @@ const UnAuthorizedLayout = () => {
                     <img src={message} alt="" />
                     <img src={profile} alt="" />
 
-                </div>
+                </div> */}
 
             </header>
             <main>
                 <Outlet />
             </main>
-            <footer className="footer">
-                <h1>Футер хуйня сделать</h1>
-            </footer>
         </>
     )
 

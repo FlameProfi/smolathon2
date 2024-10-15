@@ -18,9 +18,9 @@ const AuthorizedLayout = () => {
     const [inputSearch, setInputSearch] = useState<string>("");
 
     useEffect(() => {
-        if (localStorage.getItem('token')) {
-            store.checkAuth()
-        }
+        // if (localStorage.getItem('accessToken')) {
+        //     store.checkAuth()
+        // }
         if(!store.isAuth){
             navigate("/")
         }
@@ -37,7 +37,7 @@ const AuthorizedLayout = () => {
     return (
         <>
 
-            <header className="header">
+            <header className="header__custom">
                 <NavLink to="/">
                     <div className="logo__">
                         <img src={logo} alt="" style={{ marginRight: "20px" }} />
@@ -57,8 +57,8 @@ const AuthorizedLayout = () => {
                     <NavLink to="/events">
                         СОБЫТИЯ
                     </NavLink>
-                    <NavLink to="/authors">
-                        АВТОРЫ
+                    <NavLink to="/goods">
+                        ТОВАРЫ
                     </NavLink>
                     {/* <NavLink to="/">
                         ПРОЕКТЫ
@@ -82,7 +82,9 @@ const AuthorizedLayout = () => {
                 <div className="icons">
                     <img src={searchLogo} alt="" />
                     <img src={message} alt="" />
+                    <NavLink to={`/profile/${store.user.nickname}`}> 
                     <img src={profile} alt="" />
+                    </NavLink>
 
                 </div>
 
@@ -90,9 +92,6 @@ const AuthorizedLayout = () => {
             <main>
                 <Outlet />
             </main>
-            <footer className="footer">
-                <h1>Футер хуйня сделать</h1>
-            </footer>
         </>
     )
 

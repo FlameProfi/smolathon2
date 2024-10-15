@@ -1,0 +1,91 @@
+.photo_modal{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.58);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.photo_modal.active{
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+
+}
+.photo_modal__content{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    transform: scale(0.5);
+    transition: 0.4s;
+    width: 700px;
+    height: auto;
+
+    p{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        
+        color: #000000;    
+    }
+}
+.photo_modal__content.active{
+    transform: scale(1);
+}
+
+.modal__gencontent{
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+}
+.modal__gencontent__left{
+    h1{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        
+        color: #000000;
+    }
+    .gencontent__likes{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        p{
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+            
+            color: #000000;
+            text-align: center;
+        }
+    }
+    p{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        
+        color: #000000;
+    }
+}

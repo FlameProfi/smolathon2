@@ -9,15 +9,15 @@
 
 
 
-.header {
-
+.header__custom {
+    margin-bottom: 20px;
 
 
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: start;
-    background-color: rgb(211, 211, 211);
+    // background-color: rgb(211, 211, 211);
 
     min-height: 150px;
 
@@ -148,7 +148,7 @@
             border: none;
             outline: none;
             margin-left: 10px;
-            font-family: 'Inter';
+            font-family: 'Exo 2';
             font-style: normal;
             font-weight: 400;
             font-size: 32px;
@@ -168,7 +168,7 @@
         border: 2px solid #FFFFFF;
         box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.25);
         border-radius: 27px;
-        font-family: 'Inter';
+        font-family: 'Exo 2';
         font-style: normal;
         font-weight: 400;
         font-size: 32px;

@@ -1,0 +1,85 @@
+.profile__gods{
+    height: 100%;
+    width: 1308px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    font-family: "Exo 2";
+    .card {
+        width: 220px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .card-content {
+        padding: 15px;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header h2 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .card-content h3 {
+        font-size: 14px;
+        color: gray;
+        margin: 5px 0;
+    }
+    
+    .card-content p {
+        font-size: 12px;
+        color: gray;
+    }
+    
+    .like {
+        display: flex;
+        align-items: center;
+    }
+    
+    .like span {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    
+    .like img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border-top: 1px solid #eee;
+        align-items: center;
+    }
+    
+    .price {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .buy-btn {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+}

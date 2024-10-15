@@ -29,7 +29,7 @@ export const Header = (_props: { authorized: boolean }) => {
     }
 
     return (
-        <div className="header" style={{marginLeft: "30px"}}>
+        <div className="header" style={{marginLeft: "30px", marginBottom: "20px"}}>
             <div className="logo__">
             <img src={logo} alt="" style={{marginRight: "20px"}} />
             <div className="logo__name">

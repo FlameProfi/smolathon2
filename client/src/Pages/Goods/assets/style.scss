@@ -1,6 +1,7 @@
 .event__list{
     width: 100vw;
     height: 100vh;
+    font-family: "Exo 2";
 }
 .event__main{
     display: flex;
@@ -12,7 +13,7 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
-        gap: 30px;
+        // gap: 30px;
         .left__item{
             display: flex;
             p{
@@ -56,9 +57,9 @@
             color: #000000;
         }
         .right__items{ 
-            display: flex;
-            gap: 20px;
-            overflow-x: scroll;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
             width: 1160px;
 
         .right__items__item{
@@ -122,3 +123,78 @@
 }
 
 
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.artist-name {
+    font-weight: bold;
+}
+
+.product-size {
+    font-size: 12px;
+    color: #888;
+}
+
+.product-like {
+    display: flex;
+    align-items: center;
+}
+
+.product-like img {
+    width: 15px;
+    margin-left: 5px;
+}
+
+.product-title {
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.product-description {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sort {
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: rgba(217, 217, 217, 1);
+}

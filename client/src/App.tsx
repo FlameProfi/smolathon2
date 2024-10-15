@@ -1,26 +1,23 @@
 import React, {FC, useContext, useEffect, useState} from 'react';
-import LoginForm from "./components/LoginForm";
 import {Context} from "./index";
 import {observer} from "mobx-react-lite";
-import {IUser} from "./models/IUser";
-import UserService from "./services/UserService";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AuthorizedLayout from './layouts/AuthorizedLayout.tsx';
 import UnAuthorizedLayout from './layouts/UnAuthorizedLayout.tsx';
 import AuthLayout from "./layouts/AuthLayout.tsx"
 import Login from './Pages/Login/Login.tsx';
 import Register from './Pages/Register/Register.tsx';
-import Events from './Pages/Events/Events.tsx';
-import Event from "./Pages/EventPage/EventPage.tsx"
-import Card from './components/Card/Card.tsx';
+import Goods from './Pages/Goods/Goods';
+import NotFound from './Pages/404/404.tsx';
 import "./styles/fonts.css"
 import Profile from './Pages/Profile/Profile.tsx';
-
+import { LoadingPage } from './Pages/LoadingPage/LoadingPage';
+import { CreateObject } from './Pages/CreateObject/CreateObject';
 const App: FC = () => {
     const {store} = useContext(Context);
 
     useEffect(() => {
-        if (localStorage.getItem('token')) {
+        if (localStorage.getItem('accessToken')) {
             store.checkAuth()
         }
 
@@ -57,11 +54,11 @@ const App: FC = () => {
             
             {store.isAuth ? 
             <Route path="/" element={<AuthorizedLayout />} >
-                <Route index element={<p>12dfsgsdfgsdgf3</p>} />
-                <Route path="events" element={<Events />} />
+                <Route index element={<LoadingPage />} />
+                <Route path="goods" element={<Goods />} />
+                <Route path="addGoods" element={<CreateObject />}/>
                 <Route path="authors" element={<p>12dfsgsdfgsdgf3</p>} />
-        
-
+                <Route path="profile/:username" element={<Profile />}/>
 
             
 
@@ -71,9 +68,8 @@ const App: FC = () => {
                 :
             // {/* Неавторизованный роутинг */}
             <Route path="/" element={<UnAuthorizedLayout />} >
-            <Route index element={<p>dhgfdfgdfgh</p>} />
-            <Route path="events" element={<p>ggg</p>} />
-            <Route path="authors" element={<p>12dfsgsdfgsdgf3</p>} />
+            <Route index element={<LoadingPage/ > } />
+            <Route path="events" element={<p >ggg</p>} />
 
                 </Route>
             }
@@ -88,7 +84,7 @@ const App: FC = () => {
 
             </Route>
 
-
+            <Route path="*" element={<NotFound />} />
 
         </Routes>
     </BrowserRouter>

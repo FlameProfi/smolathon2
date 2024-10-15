@@ -1,0 +1,68 @@
+.portfolio__photo__block{
+    height: 100%;
+    width: 1308px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 85px;
+    .portfolio__uploadPhoto{
+        position: relative;
+        width: 385px;
+        height: 555px;
+        background: #E0E0E0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 71px;
+            height: 60px;
+
+        }
+        h1{
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            /* identical to box height */
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+    }
+        
+
+    .portfolio__work{
+        position: relative;
+        width: 385px;
+        height: 555px;
+        img{ 
+        width: 385px;
+        height: 555px;
+    }
+    p{
+        position: absolute;
+        bottom: 2%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        left: 50%;
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+    }
+    }
+}
